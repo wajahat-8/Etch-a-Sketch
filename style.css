@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  flex-direction: column;
+}
+button {
+  background-color: black;
+  color: white;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  justify-content: center;
+  width: 960px;
+  height: 960px;
+  overflow: hidden;
+}
+
+.grid-row {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell {
+  flex: 1;
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+}
