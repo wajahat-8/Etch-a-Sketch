@@ -35,13 +35,21 @@ function makeColumns(cellNum) {
             let newCell = document.createElement("div");
             newCell.className = "cell";
             rows[i].appendChild(newCell);
-            newCell.addEventListener("mouseover", (event) => { event.target.style.backgroundColor = "black" });
+            newCell.addEventListener("mouseover", (event) => { event.target.style.backgroundColor = getRandomRGBA() });
 
         }
     }
 
 }
 
+function getRandomRGBA(){
+    const r=Math.floor(Math.random()*256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    const a=Math.floor(Math.random()*256);
+    return`rgba(${r},${g},${b},${a})`;
 
+
+}
 
 defaultGrid();
